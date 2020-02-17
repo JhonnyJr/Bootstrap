@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <p></p>
+
+    <div class="container">
+      <table class="table table-borderless table-striped table-sm">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Curso</th>
+            <th>Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-active">
+            <td>1</td>
+            <td>Terminal Linux</td>
+            <td>4.6</td>
+          </tr>
+          <tr class="table-primary">
+            <td>2</td>
+            <td>Python & MySQL</td>
+            <td>4.4</td>
+          </tr>
+          <tr class="table-secondary">
+            <td>3</td>
+            <td>Curso de Programação com Perl</td>
+            <td>4.7</td>
+          </tr>
+          <tr class="table-success">
+            <td>4</td>
+            <td>CodeIgniter</td>
+            <td>4.4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+<br>
+    <div class="container">
+      <div class="alert alert-danger">
+        Erro! <a href="#" class="alert-link">Clique para saber mais.</a>
+      </div>
+      <div class="alert alert-success">
+        Concluído! <a href="#" class="alert-link">Clique aqui para continuar.</a>
+
+      </div>
+    </div>
+
+<br>
+    <div class="container">
+      <button type="button" class="btn-primary" name="button">Primary</button>
+      <button type="button" class="btn-warning" name="button">Waning</button>
+      <button type="button" class="btn btn-outline-primary" name="button">Primary</button>
+      <button type="button" class="btn btn-outline-warning" name="button">Warning</button>
+      <button type="button" class="btn-primary btn-lg" name="button">Primary</button>
+      <button type="button" class="btn-primary btn-sm" name="button">Primary</button>
+      <button type="button" class="btn-primary btn-block" name="button">Primary</button>
+      <button type="button" class="btn-primary" disabled name="button">Mouse</button>
+    </div>
+<br>
+    <div class="container">
+      <a href="#" class="btn btn-primary">Primary</a>
+      <a href="#" class="btn btn-warning">Warning</a>
+      <a href="#" class="btn btn-outline-primary">Primary</a>
+      <a href="#" class="btn btn-outline-warning">Warning</a>
+    </div>
+<br>
+    <div class="container">
+      <input type="submit" class="btn btn-primary" value="Clique aqui">
+      <input type="submit" class="btn btn-info" value="Clique aqui">
+      <input type="submit" class="btn btn-outline-primary" value="Clique aqui">
+      <input type="submit" class="btn btn-outline-info" value="Clique aqui">
+    </div>
+<br>
+    <div class="container">
+      <h1>Formulários</h1>
+      <form>
+        <div class="form-group">
+          <label>Digite o nome do usuário:</label>
+          <input type="text" class="form-control" placeholder="usuário">
+        </div>
+        <div class="form-group">
+          <label>Digite a senha do usuário:</label>
+          <input type="text" class="form-control" onclick="this.value='';this.onclick='test';this.style.color='#7e7e7e';setAttribute('type', 'password');" onfocus="if(this.value == 'senha') {this.value = ''; setAttribute('type', 'password');}" onblur="if (this.value == '') {this.value = 'senha'; setAttribute('type','text');}" value="senha">
+        </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="file" class="form-control" value="">
+          </div>
+        <input type="submit" name="enviar" class="btn btn-secondary" value="Enviar">
+      </form>
+    </div>
+<br>
+
+
+    <footer>
+      <script src="public/js/jquery.js"></script>
+      <script src="public/js/bootstrap.bundle.min.js"></script>
+    </footer>
+  </body>
+</html>
